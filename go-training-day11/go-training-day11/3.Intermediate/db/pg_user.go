@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"/util"
+	"github.com/gtldhawalgandhi/go-training/3.Intermediate/util"
 )
 
 type UserRequest struct {

@@ -37,7 +37,12 @@ func (server *Server) setupRouter() {
 	router.POST("/login", server.loginUser)
 	router.GET("/users", server.getUsers)
 	router.POST("/users", server.createUser)
-
+	//sunday work
+	// router.Group("/auth", server.ValidateToken())
+	// {
+	// router.Use(server.ValidateToken())
+	router.GET("/authUser", server.ValidateToken(), server.getUsers)
+	// }
 	server.router = router
 }
 
